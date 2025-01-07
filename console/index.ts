@@ -10,7 +10,7 @@ import refreshToken from "./actions/refreshToken"
 import register from "./actions/register"
 import updateExpense from "./actions/updateExpense"
 
-async function initialize() {
+export async function initialize() {
    const context = { user: null }
    consola.success("Welcome to Expense Tracker CLI client!")
    consola.box("You will be asked to choose an action. If you want to exit the program, press CTRL + C few times")
@@ -74,5 +74,3 @@ async function startSession(context) {
    }
    return
 }
-
-await initialize()
