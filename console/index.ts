@@ -1,24 +1,29 @@
 import consola from "consola"
 import { Actions } from "./types/actions"
-import createExpense from "./actions/createExpense"
-import getAllExpenses from "./actions/getAllExpenses"
-import getExpense from "./actions/getExpense"
-import deleteAccount from "./actions/deleteAccount"
-import deleteExpense from "./actions/deleteExpense"
-import logIn from "./actions/logIn"
-import refreshToken from "./actions/refreshToken"
-import register from "./actions/register"
-import updateExpense from "./actions/updateExpense"
+import createExpense from "./actions/expense/createExpense"
+import getAllExpenses from "./actions/expense/getAllExpenses"
+import getExpense from "./actions/expense/getExpense"
+import deleteAccount from "./actions/user/deleteUser"
+import deleteExpense from "./actions/expense/deleteExpense"
+import updateExpense from "./actions/expense/updateExpense"
+import type { Context } from "./types/context"
+import register from "./actions/auth/register"
+import logIn from "./actions/auth/logIn"
+import refreshToken from "./actions/auth/refreshToken"
 
 export async function initialize() {
-   const context = { user: null }
+   const context: Context = {
+      user: {
+         id: null
+      }
+   }
    consola.success("Welcome to Expense Tracker CLI client!")
    consola.box("You will be asked to choose an action. If you want to exit the program, press CTRL + C few times")
 
    await startSession(context)
 }
 
-async function startSession(context) {
+async function startSession(context: Context) {
    const action = await consola.prompt("Choose an action: ", {
       options: [
          Actions.REGISTER,
