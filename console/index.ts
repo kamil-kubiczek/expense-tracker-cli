@@ -18,7 +18,7 @@ export async function initialize() {
       }
    }
    consola.success("Welcome to Expense Tracker CLI client!")
-   consola.box("You will be asked to choose an action. If you want to exit the program, press CTRL + C few times")
+   consola.box("You will be asked to choose an action. \nIf you want to exit the program, press CTRL + C few times")
 
    await startSession(context)
 }
