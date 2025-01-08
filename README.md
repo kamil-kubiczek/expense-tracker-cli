@@ -2,7 +2,7 @@
 
 CLI which acts as tRPC client for Expense Tracker API - [Expense Tracker API repository](https://github.com/kamil-kubiczek/expense-tracker-api)
 
-**Project status: 🟡WIP**
+**Project status: 🟢Ready to use**
 
 ---
 
