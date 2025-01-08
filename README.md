@@ -21,7 +21,7 @@ Features provided by API and exposed to user by CLI are described here - https:/
 
 **Steps**
 
-1. Download Expense Tracker API public repository - (API repository)[https://github.com/kamil-kubiczek/expense-tracker-api]
+1. Download Expense Tracker API public repository - [API repository](https://github.com/kamil-kubiczek/expense-tracker-api)
 1. Setup Expense Tracker API locally in development mode - [Steps to run API locally](https://github.com/kamil-kubiczek/expense-tracker-api?tab=readme-ov-file#how-to-run-api)
 1. Inside `expense-tracker-api` repository use `npm link`
 1. Then go to `expense-tracker-cli` folder and use `npm link expense-tracker-api`
