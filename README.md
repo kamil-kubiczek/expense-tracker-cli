@@ -1,18 +1,29 @@
-### About project
+## About project
 
 CLI which acts as tRPC client for Expense Tracker API - [Expense Tracker API repository](https://github.com/kamil-kubiczek/expense-tracker-api)
 
 **Project status: 🟢Ready to use**
 
----
 
-### Features
+
+## Features
 
 Features provided by API and exposed to user by CLI are described here - https://roadmap.sh/projects/expense-tracker-api
 
----
 
-### How to run CLI client
+## Installation
+1. Clone this repository
+```
+git clone https://github.com/kamil-kubiczek/expense-tracker-cli/
+```
+
+2. Install npm dependencies
+```
+npm i 
+```
+
+
+## How to run CLI client
 
 **Prerequisites:**
 
